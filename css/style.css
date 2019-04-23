@@ -1,0 +1,300 @@
+.display-none {
+    display : none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+    
+}
+
+#fin-jeu {
+    display: none;
+}
+
+#fin-jeu {
+    margin: 0 auto;
+    padding: 80px;
+    text-align: center;    
+}
+
+#fin-jeu h1 {
+    font-size: 5em;
+    text-align: center;
+    color: black;
+    line-height: .85;
+    margin: 0 auto;
+    width: 2.75em;
+}
+
+#fin-jeu h2 {
+    font-size: 2em;
+}
+
+#fin-jeu button {
+    font-size: 2em;
+    text-align: center;
+    background: white;
+    border-radius: 28px;
+    color: black;
+    padding: 10px 40px 10px 40px;
+    text-decoration: none;border:none}
+
+.conteneur {
+    background-color: white;
+    display: flex;
+}
+
+.joueur-conteneur {
+    width: 200px;
+    min-width: 200px;
+    text-align: center;
+    flex-direction: column;
+    height: 350px;
+    background-color: inherit;
+}
+
+.combat-conteneur {
+    position: absolute;
+    top: 575px;
+    left: 192px;
+}
+
+.message-conteneur {
+    width: 520px;
+    text-align: center;
+    position: absolute;
+    top: 520px;
+    left: 15px; 
+}
+
+.message {
+    font-size: 25px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    background-color: #f0f3f6;
+}
+
+.gagnant {
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+#jouer-encore {
+    margin-top: 20px;
+}
+
+.joueurs-conteneur {
+    display: flex;
+}
+
+.joueur-conteneur .joueur, .joueur-conteneur .arme {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.arme {
+    margin-top: 10px;
+}
+
+.joueur-conteneur .joueur {
+    background-color: black;
+    border-radius: 10px;
+}
+
+#joueur-1-status {
+    background-image: url(../images/joueur1.png);
+    !important
+    
+}
+
+.arme-valeur {
+    text-transform: capitalize;
+}
+
+#joueur-2-status {
+    background-image: url(../images/joueur2.png);
+    !important
+}
+
+#joueur-1 .joueur-status, #joueur-2 .joueur-status {
+    width: 75px;
+    height: 75px;
+    margin:auto;    
+}
+
+.joueur-conteneur .joueur .joueur-nom {
+    color: white;
+}
+
+.joueur-status {
+    background: no-repeat center;
+    
+}
+
+#joueur-1, #joueur-2 {
+    padding: 20px;    
+    margin: 0px 20px 20px 20px;    
+    border-radius: 25px;
+}
+
+#joueur-1 {
+    background-color: dodgerblue;
+}
+
+#joueur-2 {
+    background-color: crimson;
+}
+
+#joueur-1 .joueur, #joueur-2 .joueur {
+    font-size: 20px;
+    text-align: center;
+}
+
+html, body {
+   width: 100%;
+   height: 100%;
+}
+
+body {
+    background-image: -webkit-linear-gradient(top, #fcfcfc, #fcfcfc);
+    background-image: linear-gradient(top, #fcfcfc, #fcfcfc);
+}
+
+button {
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+    font-variant: small-caps;
+    color: gray;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, .3), inset 0px 4px 1px 1px white, inset 0px -3px 1px 1px rgba(204,198,197,.5);    
+}
+
+.combat-btn {
+    margin: auto;
+    text-align: center;    
+    width: 80px;
+    height: 80px;
+    border-radius: 5%;  
+    margin: 0 15px 15px 0;
+    /*display: inline;*/    
+}
+
+.combat-btn:after {
+    color: #e9e6e4;     
+    text-decoration: none;
+    text-shadow: 0px -1px 1px #bdb5b4, 1px 1px 1px white;
+    position: absolute;
+    width: 30px;
+}
+
+.combat-btn:hover {
+    background-image: -webkit-linear-gradient(top, #fff, #f4f1ee);
+    background-image: linear-gradient(top, #fff, #f4f1ee);
+    color: #0088cc;
+    
+}
+
+.combat-btn:active {
+    
+    background-image: -webkit-linear-gradient(top, #efedec, #f7f4f4);
+    background-image: linear-gradient(top, #efedec, #f7f4f4);
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,.4), inset 0px -3px 1px 1px rgba(204,198,197,.5);
+}
+
+header {    
+    background-color: #ffc300;
+    color: black;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin: auto;    
+    text-transform: lowercase;
+    line-height: 200%;
+    font-size: 1em;
+    font-variant: small-caps;
+    margin-bottom: 50px;    
+}
+
+#grille {
+   display: block;
+    width: 450px;
+    height: 450px;
+    margin-left: calc(50% - 210px);     
+}
+
+#conteneur-grille {    
+    margin-left: 150px;
+}
+
+.carre {
+    background-color: white;
+    border: 1px solid grey;
+    display: block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;    
+}
+
+.obstacle {
+    background-size: 100%;
+    background-image: url(../images/bloc.png);
+}
+
+.couteau {
+    background-size: 100%;
+    background-image: url(../images/couteau.png);
+}
+
+.epee {
+    background-size: 100%;
+    background-image: url(../images/epee.png);
+}
+
+.pistolet {
+    background-size: 100%;
+    background-image: url(../images/pistolet.png);
+}
+
+.fusil {
+    background-size: 100%;
+    background-image: url(../images/fusil.png);
+}
+
+.bazooka {
+    background-size: 100%;
+    background-image: url(../images/bazooka.png);
+}
+
+.joueur1 {
+    background-size: 100%;
+    background-image: url(../images/joueur1.png);    
+}
+
+.joueur2 {
+    background-size: 100%;
+    background-image: url(../images/joueur2.png);
+}
+
+@media screen and (max-width: 450px) {
+    
+    .joueur-conteneur {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #grille {
+        width: 302px;
+        height: 302px;
+        margin-left: calc(50% - 148px);        
+    }
+
+    .carre {
+        width: 28px;
+        height: 28px;
+        background-size: 28px 28px;
+    }
+}
