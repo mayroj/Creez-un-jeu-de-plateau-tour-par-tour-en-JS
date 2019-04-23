@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">        
+		<title>Jeu projet 6</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body>
+        
+        <header>
+            <h1>Jeu de plateau tour par tour en JS</h1>
+            <h2>Projet 6 - Openclassroom - CARLE Mayerlin</h2>
+        </header> 
+        
+        <div class="conteneur">
+            
+            <div class="joueurs-conteneur">
+                
+                <!-- Joueur 1 -->        
+                <div class="joueur-conteneur" id="joueur-1">
+                    <div class="joueur">
+                        <h2 class="joueur-nom">May</h2>
+                     <div id="joueur-1-status" class="joueur-status"></div>                         
+                    </div>
+                    <div class="arme">
+                        <h2>Vie: <span class="vie"></span></h2>
+                        <div class="ligne"></div>
+                        <h3>Arme: <span class="arme-valeur"></span></h3>                        
+                        <div class="message1"></div>
+                    </div>          
+                </div>
+        
+                <!-- Joueur 2 -->
+                <div class="joueur-conteneur" id="joueur-2">
+                    <div class="joueur">
+                        <h2 class="joueur-nom">Sorcière</h2>
+                        <div id="joueur-2-status" class="joueur-status"></div>
+                    </div>
+                    <div class="arme">
+                        <h2>Vie: <span class="vie"></span></h2>
+                        <div class="ligne"></div>
+                        <h3>Arme: <span class="arme-valeur"></span></h3>                    
+                        <div class="message2"></div>
+                    </div>
+                </div>                
+             </div>            
+            
+            <div class='message-conteneur'>
+                <div class="message"></div>
+            </div>
+            
+            <!-- Buttons de combat -->
+            <div class="combat-conteneur">
+                <div id="btn-combat"></div>
+            </div>           
+            
+            <!-- Plateau -->
+            <div id="conteneur-grille">
+                <div id="grille"></div>               
+            </div> 
+            
+            <!-- Fin de partie -->
+            <div id="fin-jeu">
+                <h1>FIN DE JEU</h1>
+                <h2 class="gagnant"></h2>
+                <button id="jouer-encore">Jouer Encore !</button>
+            </div>
+        
+        </div>      
+		
+		
+       <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/javascript.js"></script>
+        
+	</body>
+</html>
